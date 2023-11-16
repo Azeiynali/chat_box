@@ -21,6 +21,9 @@ export default {
 </script>
 
 <style>
+div {
+    box-sizing: border-box;
+}
 #app {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
