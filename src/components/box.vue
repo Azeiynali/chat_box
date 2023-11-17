@@ -20,7 +20,7 @@
             </div>
             <div v-if="screen == 'questions'" class="FAQ">
                 <div class="Fwrapper">
-                    <div dir="rtl" v-for="key of FAQo" class="FBox">
+                    <div dir="rtl" v-for="key of FAQo" :key="key[0]" class="FBox">
                         {{ key[0] }}<br />
                         {{ key[1] }}
                     </div>
@@ -28,7 +28,7 @@
             </div>
             <div style="height: 430px;" v-if="screen == 'messages'">
                 <div class="Mwrapper">
-                    <div v-for="message of messages" class="amessage">{{ message }}</div>
+                    <div :key="message" v-for="message of messages" class="amessage">{{ message }}</div>
                 </div>
                 <div class="send">
                     <input dir="rtl" v-model="message" @keydown.enter="send" type="text">
