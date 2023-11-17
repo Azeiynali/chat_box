@@ -1,5 +1,5 @@
 # chat_box
-a chat box with Vue js 2 for use in all wesites
+a chat box with Vue js 2 for use in all websites
 
 ## Use
 ```powershell
